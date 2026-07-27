@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SqueezePlayer</title>
+
+  <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
+
+  <!-- App Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- iOS PWA Support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="assets/icon.png">
 </head>
+
 <body>
   <h1>SqueezePlayer</h1>
+  <p>Offline Music Player powered by SqueezeBox</p>
+
   <button id="play">Play Test Audio</button>
 
   <script src="app.js"></script>
+
+  <script>
+    // Register Service Worker
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(() => console.log("Service Worker registered"))
+        .catch(err => console.log("SW registration failed:", err));
+    }
+  </script>
 </body>
 </html>
