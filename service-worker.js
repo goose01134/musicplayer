@@ -8,7 +8,8 @@ const FILES_TO_CACHE = [
   "/manifest.json",
   "/style.css",
   "/app.js",
-  "/assets/icon.png"
+  "/assets/icon.png",
+  "/24K_Magic_KLICKAUD.mp3"
 ];
 
 // Install event
