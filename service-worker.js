@@ -9,7 +9,7 @@ const FILES_TO_CACHE = [
   "/style.css",
   "/app.js",
   "/assets/icon.png",
-  "/24K_Magic_KLICKAUD.mp3"
+  "/song.mp3"
 ];
 
 // Install event
