@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SqueezePlayer</title>
+  <title>MusicPlayer</title>
+
+  <!-- Merriweather Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
@@ -17,10 +20,18 @@
 </head>
 
 <body>
-  <h1>SqueezePlayer</h1>
+  <h1>MusicPlayer</h1>
   <p id="mode"></p>
 
-  <button id="play">Play Song</button>
+  <!-- Search Bar -->
+  <input id="search" type="text" placeholder="Search music...">
+
+  <!-- Song List -->
+  <div id="songList">
+    <!-- You will fill this with your GUI layout -->
+  </div>
+
+  <!-- Install Button -->
   <button id="install">Install App</button>
   <p id="installStatus"></p>
 
